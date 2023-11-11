@@ -21,12 +21,15 @@ section {
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: 'Times New Roman', Times, serif;
+  color: #730202;
 }
-
+.sobre-mi .seccion-titulo h2{
+  font-family: 'Times New Roman', Times, serif;
+}
 .seccion-oscura {
   color: white;
-  background-color: #1b1b32;
+  background-color: #8C323A;
 }
 
 .seccion-clara {
@@ -37,7 +40,7 @@ h1 {
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: '', cursive;
 }
 
 .seccion-descripcion {
@@ -102,10 +105,18 @@ h1 {
 .experiencia {
   padding: 40px 40px 60px 40px;
 }
+.experiencia {
+  text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.columna {
+  display: inline-block;
+  margin: auto; /* Centra la columna */
+}
 
 .experiencia .columna {
   padding: 20px;
-  border: 2px solid #8080804d;
+  border: 2px solid #0000004d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,12 +126,12 @@ h1 {
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #1b1b32;
+  background-color: #95A67B;
 }
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
+  color: #95A67B;
   background-color: #0a0a23;
   padding: 8px 19px;
   border-radius: 50%;
@@ -137,15 +148,25 @@ h1 {
   font-weight: bold;
   margin: 10px 0;
 }
-
+.badges-contenedor {
+  color-scheme: #95A67B;
+}
 .badge {
   margin: 5px;
 }
 
-/* Proyectos */
+/* Asegúrate de que esta regla esté después de cualquier otra regla que pueda estar afectando los estilos */
+.badge.text-bg-primary {
+  background-color: #1b405a; /* Cambia este valor al color que desees */
+  color: #fff; /* Cambia este valor al color del texto que desees */
+  padding: 5px 10px; /* Ajusta según sea necesario */
+  border-radius: 5px; /* Ajusta según sea necesario */
+}
 
+/* Proyectos */
 .proyectos-recientes {
   padding: 40px;
+  text-align: center; /* Añadido para centrar el texto en la sección */
 }
 
 .proyectos-recientes img {
@@ -158,8 +179,22 @@ h1 {
 }
 
 .proyectos-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 60px;
   margin-bottom: 40px;
+  margin-left: 20%;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto img {
+  max-width: 100%;
+  height: auto;
 }
 
 .overlay {
@@ -170,16 +205,13 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #95A67B;
 }
 
 .overlay p {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
-}
-
-.proyecto {
-  position: relative;
 }
 
 .proyecto:hover img {
@@ -195,14 +227,21 @@ h1 {
 }
 
 .overlay i {
-  color: black;
+  color: #5E7349;
   font-size: 60px;
   margin: 10px;
 }
 
+.proyectos-recientes h2 {
+  color: #5E7349;
+}
+
+.proyectos-recientes h3 {
+  color: #8E9E75;
+}
 
 /* Testimonios */
-
+/* 
 .testimonios {
   padding: 40px 40px 80px 40px;
 }
@@ -253,7 +292,7 @@ h1 {
 .testimonio-info .cargo {
   font-size: 0.9rem;
   color: #656060;
-}
+} */
 
 /* Contacto */
 
@@ -265,7 +304,7 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #D96C75;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
@@ -347,7 +386,7 @@ footer {
 
 .iconos-redes-sociales a:hover {
   background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  border: 2px solid #730202;
 }
 
 .iconos-redes-sociales a:hover i {
